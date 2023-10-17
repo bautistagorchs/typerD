@@ -1,0 +1,162 @@
+body {
+  height: 90vh;
+  font-size: larger;
+  background-color: rgb(10, 71, 71);
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main {
+  padding: 5rem 13.5rem;
+  border-color: rgb(0, 0, 0);
+  border-width: 1.7px;
+  border-style: outset;
+}
+
+#randomWord {
+  display: flex;
+  justify-content: center;
+}
+#text {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  height: 2.5rem;
+  width: 14rem;
+  border-radius: 14px;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.score-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h2 {
+  color: beige;
+}
+
+/*    B U T T O N    */
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: #ffffff00;
+  color: #fff;
+  width: 15em;
+  height: 4em;
+  border: #046656 0.2em solid;
+  border-radius: 11px;
+  text-align: center;
+  transition: all 0.6s ease;
+  display: none;
+}
+
+.button:hover {
+  background-color: rgb(6, 53, 53);
+  cursor: pointer;
+}
+
+.button svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.button:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  margin: 0 1.5em;
+}
+
+/*    I N P U T    */
+
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #38caef;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
